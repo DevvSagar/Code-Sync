@@ -1,4 +1,6 @@
 {
+
+  "homepage": "https://DevvSagar.github.io/Code-Sync",
   "name": "realtime-code-editor",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
